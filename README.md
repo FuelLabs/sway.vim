@@ -27,6 +27,7 @@ if not configs.sway_lsp then
      default_config = {
        cmd = {'forc-lsp'},
        filetypes = {'sway'},
+       on_attach = on_attach,
        root_dir = function(fname)
          return lspconfig.util.find_git_ancestor(fname)
        end;
