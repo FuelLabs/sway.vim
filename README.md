@@ -15,7 +15,8 @@ Pre-requisites:
 cp -R ~/sway.vim/syntax ~/.config/nvim && cp -R ~/sway.vim/ftdetect ~/.config/nvim
 ```
 2. If you do not have `~/.config/nvim/init.lua`, install [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
-3. Add the following to `~/.config/nvim/init.lua`:
+3. If you already have `init.lua`, you may need to require extra dependencies, or simply copy [this block](https://github.com/nvim-lua/kickstart.nvim/blob/38828dcaf7c140902fedeaa75b017bf968400bb0/init.lua#L401-L604).
+4. Add the following to `~/.config/nvim/init.lua`:
 ```
 -- Install Sway LSP as a custom	server
 local lspconfig = require 'lspconfig'
